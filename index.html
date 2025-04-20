@@ -1,15 +1,16 @@
-
 <!DOCTYPE html>
 <html lang="az">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>E-Kitab Qaqa</title>
+  <title>FluDrop</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <style>
     * {
       box-sizing: border-box;
     }
+
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
@@ -17,6 +18,7 @@
       color: #1B4726;
       line-height: 1.6;
     }
+
     header {
       background: #1B4726;
       color: white;
@@ -25,16 +27,21 @@
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
       position: relative;
     }
+
     header h1 {
       font-size: 3em;
       margin-bottom: 10px;
       text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+      font-family: 'Montserrat', sans-serif;
+      letter-spacing: 1px;
     }
+
     header p {
-      font-size: 1.2em;
+      font-size: 1.3em;
       color: #ccc;
-      margin-bottom: 25px;
+      margin-bottom: 30px;
     }
+
     .btn {
       display: inline-block;
       background: #B87528;
@@ -44,74 +51,123 @@
       text-decoration: none;
       font-weight: bold;
       font-size: 1.1em;
-      transition: background 0.3s, transform 0.3s;
+      transition: all 0.3s ease;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
+
     .btn:hover {
       background: #996020;
       transform: scale(1.05);
     }
+
     section {
-      padding: 60px 20px;
+      padding: 70px 20px;
       max-width: 1000px;
-      margin: auto;
+      margin: 40px auto;
       background-color: #ffffff;
-      border-radius: 10px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
     }
+
     section h2 {
-      font-size: 2.2em;
-      margin-bottom: 20px;
+      font-size: 2.4em;
+      margin-bottom: 30px;
       color: #1B4726;
       text-align: center;
+      font-family: 'Montserrat', sans-serif;
+      position: relative;
     }
+
+    section h2::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 4px;
+      background: linear-gradient(to right, #B87528, #1B4726);
+      margin: 10px auto 0;
+      border-radius: 2px;
+    }
+
     .card {
       background: white;
       padding: 25px;
       margin: 20px auto;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
       border-radius: 12px;
       max-width: 800px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+    }
+
     .card p,
     .card ul {
-      font-size: 1.1em;
+      font-size: 1.15em;
     }
+
+    .card ul {
+      padding-left: 20px;
+    }
+
+    .card ul li {
+      margin-bottom: 12px;
+      position: relative;
+    }
+
+    .card ul li::before {
+      content: '✔';
+      color: #B87528;
+      font-weight: bold;
+      position: absolute;
+      left: -25px;
+    }
+
     .faq-item {
-      margin-bottom: 20px;
+      margin-bottom: 25px;
     }
+
     .faq-item strong {
       display: block;
       font-size: 1.1em;
       color: #B87528;
-      margin-bottom: 5px;
+      margin-bottom: 8px;
     }
+
     footer {
       background: #1B4726;
       color: #ccc;
       text-align: center;
-      padding: 30px 10px;
+      padding: 35px 10px;
       font-size: 14px;
       box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.2);
     }
+
     footer a {
       color: #B87528;
       text-decoration: none;
     }
+
     footer a:hover {
       color: #996020;
     }
+
     @media screen and (max-width: 600px) {
       header h1 {
         font-size: 2.2em;
       }
+
       section h2 {
-        font-size: 1.5em;
+        font-size: 1.6em;
       }
+
       .btn {
         padding: 12px 24px;
         font-size: 1em;
       }
+
       .card {
         padding: 20px;
       }
@@ -119,21 +175,23 @@
   </style>
 </head>
 <body>
+
   <header data-aos="fade-down">
     <h1>“Necə E-Kitab Satılır?”</h1>
-    <p>Instagramda pul qazanmaq istəyən qaqaşlar üçün master plan!</p>
+    <p>Instagramda pul qazanmaq istəyənlər üçün master plan!</p>
     <a href="#kitab" class="btn">E-Kitabı Al</a>
   </header>
+
   <section id="haqqinda" data-aos="fade-up">
     <h2>Kitab Haqqında</h2>
     <div class="card">
       <p>
         Bu kitab sənə konkret olaraq öyrədir: Instagram səhifəni necə böyütdün,
-        necə güvən yaratdın və bu güvəni satışa necə çevirdin. Həm də sıfırdan başlayan qaqaşlar üçün yazılıb – yəni
-        sənlikdi!
+        necə güvən yaratdın və bu güvəni satışa necə çevirdin. Həm də sıfırdan başlayanlar üçün yazılıb.
       </p>
     </div>
   </section>
+
   <section id="ne-oyrenecem" data-aos="fade-up">
     <h2>Bu Kitabda Nələri Öyrənəcəksən?</h2>
     <div class="card">
@@ -145,13 +203,15 @@
       </ul>
     </div>
   </section>
+
   <section id="kitab" data-aos="fade-up">
     <h2>Kitabı Necə Alırsan?</h2>
     <div class="card" style="text-align: center;">
-      <p>Sadəcə aşağıdakı düyməyə kliklə, və İnstagram vasitəsilə bizimle əlaqə saxlayın:</p>
+      <p>Sadəcə aşağıdakı düyməyə kliklə və Instagram vasitəsilə bizimlə əlaqə saxla:</p>
       <a href="https://www.instagram.com/fludrop?igsh=MXJzZnB5aDk3ajU0eg%3D%3D&utm_source=qr" class="btn">İnstagram ilə Al</a>
     </div>
   </section>
+
   <section id="faq" data-aos="fade-up">
     <h2>Tez-Tez Verilən Suallar (FAQ)</h2>
     <div class="card">
@@ -169,9 +229,11 @@
       </div>
     </div>
   </section>
+
   <footer data-aos="fade-up">
     © 2025 | <a href="#">Designed and developed by FluDrop</a>
   </footer>
+
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init({
