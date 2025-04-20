@@ -11,169 +11,133 @@
       box-sizing: border-box;
     }
 
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #f5f5f5;
-      color: #1B4726;
-      line-height: 1.6;
-    }
-
-    header {
-      background: #1B4726;
-      color: white;
-      text-align: center;
-      padding: 80px 20px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-      position: relative;
-    }
-
-    header h1 {
-      font-size: 3em;
-      margin-bottom: 10px;
-      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
-      font-family: 'Montserrat', sans-serif;
-      letter-spacing: 1px;
-    }
-
-    header p {
-      font-size: 1.3em;
-      color: #ccc;
-      margin-bottom: 30px;
-    }
-
-    .btn {
-      display: inline-block;
-      background: #B87528;
-      color: white;
-      padding: 14px 28px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1.1em;
-      transition: all 0.3s ease;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
-
-    .btn:hover {
-      background: #996020;
-      transform: scale(1.05);
-    }
-
-    section {
-      padding: 70px 20px;
-      max-width: 1000px;
-      margin: 40px auto;
-      background-color: #ffffff;
-      border-radius: 16px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
-    }
-
-    section h2 {
-      font-size: 2.4em;
-      margin-bottom: 30px;
-      color: #1B4726;
-      text-align: center;
-      font-family: 'Montserrat', sans-serif;
-      position: relative;
-    }
-
-    section h2::after {
-      content: '';
-      display: block;
-      width: 60px;
-      height: 4px;
-      background: linear-gradient(to right, #B87528, #1B4726);
-      margin: 10px auto 0;
-      border-radius: 2px;
-    }
-
-    .card {
-      background: white;
-      padding: 25px;
-      margin: 20px auto;
-      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
-      border-radius: 12px;
-      max-width: 800px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
-    }
-
-    .card p,
-    .card ul {
-      font-size: 1.15em;
-    }
-
-    .card ul {
-      padding-left: 20px;
-    }
-
-    .card ul li {
-      margin-bottom: 12px;
-      position: relative;
-    }
-
-    .card ul li::before {
-      content: '✔';
-      color: #B87528;
-      font-weight: bold;
-      position: absolute;
-      left: -25px;
-    }
-
-    .faq-item {
-      margin-bottom: 25px;
-    }
-
-    .faq-item strong {
-      display: block;
-      font-size: 1.1em;
-      color: #B87528;
-      margin-bottom: 8px;
-    }
-
-    footer {
-      background: #1B4726;
-      color: #ccc;
-      text-align: center;
-      padding: 35px 10px;
-      font-size: 14px;
-      box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.2);
-    }
-
-    footer a {
-      color: #B87528;
-      text-decoration: none;
-    }
-
-    footer a:hover {
-      color: #996020;
-    }
-
-    @media screen and (max-width: 600px) {
-      header h1 {
-        font-size: 2.2em;
+  body {
+        margin: 0;
+        font-family: 'Segoe UI', sans-serif;
+        background: #1E1E1E;
+        color: #f1f1f1;
+        line-height: 1.6;
       }
 
-      section h2 {
-        font-size: 1.6em;
+      header {
+        background: #1B4726;
+        color: white;
+        text-align: center;
+        padding: 80px 20px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        position: relative;
+      }
+
+      header h1 {
+        font-size: 3em;
+        margin-bottom: 10px;
+        text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+      }
+
+      header p {
+        font-size: 1.2em;
+        color: #ccc;
+        margin-bottom: 25px;
       }
 
       .btn {
-        padding: 12px 24px;
-        font-size: 1em;
+        display: inline-block;
+        background: #B87528;
+        color: white;
+        padding: 14px 28px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.1em;
+        transition: background 0.3s, transform 0.3s;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      .btn:hover {
+        background: #996020;
+        transform: scale(1.05);
+      }
+
+      section {
+        padding: 60px 20px;
+        max-width: 1000px;
+        margin: auto;
+        background-color: #2A2A2A;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      section h2 {
+        font-size: 2.2em;
+        margin-bottom: 20px;
+        color: #f1f1f1;
+        text-align: center;
       }
 
       .card {
-        padding: 20px;
+        background: #2A2A2A;
+        color: #f1f1f1;
+        padding: 25px;
+        margin: 20px auto;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        border-radius: 12px;
+        max-width: 800px;
       }
-    }
-  </style>
-</head>
+
+      .card p,
+      .card ul {
+        font-size: 1.1em;
+      }
+
+      .faq-item {
+        margin-bottom: 20px;
+      }
+
+      .faq-item strong {
+        display: block;
+        font-size: 1.1em;
+        color: #B87528;
+        margin-bottom: 5px;
+      }
+
+      footer {
+        background: #1B4726;
+        color: #ccc;
+        text-align: center;
+        padding: 30px 10px;
+        font-size: 14px;
+        box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      footer a {
+        color: #B87528;
+        text-decoration: none;
+      }
+
+      footer a:hover {
+        color: #996020;
+      }
+
+      @media screen and (max-width: 600px) {
+        header h1 {
+          font-size: 2.2em;
+        }
+
+        section h2 {
+          font-size: 1.5em;
+        }
+
+        .btn {
+          padding: 12px 24px;
+          font-size: 1em;
+        }
+
+        .card {
+          padding: 20px;
+        }
+      }
+    </style>
+  </head>
 <body>
 
   <header data-aos="fade-down">
